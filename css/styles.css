@@ -43,6 +43,9 @@ header p{
     cursor: pointer;
     color: hsl(219, 12%, 42%);
 }
+header p:hover{
+    color: hsl(228, 45%, 44%);
+}
 main{
     padding: 1rem;
     margin-top: 57.6px;
@@ -67,10 +70,13 @@ section.unread{
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 }
+section.unread:hover{
+    background: hsla(211, 68%, 94%, 0.5);
+}
 section.unread h2::after{
     content: "";
     display: inline-block;
-    width: .7em;
+    width: .65em;
     aspect-ratio: 1/1;
     margin-left: 5px;
     background-color: hsl(1, 90%, 64%);
@@ -103,7 +109,17 @@ h2 .name{
     color: black;
 }
 h2 span{
+    transition: 0.1s;
+    cursor: pointer;
     font-weight: 800;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+h2 span:hover{
+    color: hsl(219, 85%, 26%);
+    text-shadow: 0 1px 5px #00000017;
 }
 section.type2 h2 span:last-of-type{
     color: hsl(219, 85%, 26%);
@@ -123,8 +139,23 @@ section.type3 p:last-of-type{
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 }
+section.type3 p:last-of-type:hover{
+    background-color: hsl(211, 68%, 94%);
+    border: 1px solid hsl(211, 68%, 94%);
+}
 section.type4 picture:last-of-type{
     width: 4em;
+    height: min-content;
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+section.type4 picture:last-of-type:hover{
+    outline: 3px solid hsl(205, 33%, 90%);
 }
 
 
