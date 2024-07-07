@@ -157,6 +157,7 @@ section.type3 p:last-of-type{
     padding: 1rem;
     color: hsl(219, 12%, 42%);
     border-radius: 7px;
+    cursor: pointer;
 
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
