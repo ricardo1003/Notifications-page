@@ -62,11 +62,13 @@ h1 span{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-header p{
-    cursor: pointer;
+header button{
+    background: none;
+    border: none;
     color: hsl(219, 12%, 42%);
+    cursor: pointer;
 }
-header p:hover{
+header button:hover{
     color: hsl(228, 45%, 44%);
 }
 main{
@@ -132,21 +134,26 @@ h2{
 h2 .name{
     color: black;
 }
-h2 span{
+h2 a{
     transition: 0.1s;
     cursor: pointer;
     font-weight: 800;
+    text-decoration: none;
+
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
     -ms-transition: 0.1s;
     -o-transition: 0.1s;
 }
-h2 span:hover{
+section.type1 h2 a:last-of-type{
+    color: hsl(219, 12%, 42%);
+}
+section.type2 h2 a:last-of-type{
+    color: hsl(219, 85%, 26%);
+}
+h2 a:hover, section.type1 h2 a:last-of-type:hover{
     color: hsl(219, 85%, 26%);
     text-shadow: 0 1px 5px #00000017;
-}
-section.type2 h2 span:last-of-type{
-    color: hsl(219, 85%, 26%);
 }
 section p:first-of-type{
     color: hsl(219, 14%, 63%);
